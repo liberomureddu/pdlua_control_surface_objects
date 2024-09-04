@@ -3,4 +3,6 @@ Here you'll find some GUI objects I made with pdlua. The idea is to create enoug
 
 Here's the main reference I used for making these objects: https://agraef.github.io/pd-lua/tutorial/pd-lua-intro.html
 
-This page is currently under construction. More information will come soon!
+
+https://github.com/user-attachments/assets/090322df-e1a8-4fc6-94b7-877231151593
+
