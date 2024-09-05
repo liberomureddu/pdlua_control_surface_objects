@@ -1,8 +1,13 @@
-# pdlua_GUI
-Here you'll find some GUI objects I made with pdlua. The idea is to create enough of them to make control surfaces similar as what can be done with TouchOSC, Open Stage Control, etc.
+# Pdlua Control Surface Objects
+A collection of GUI objects suitable to create custom control surfaces made with pdlua. They are currently at version 0.1.0, hence a very initial state.
 
-Here's the main reference I used for making these objects: https://agraef.github.io/pd-lua/tutorial/pd-lua-intro.html
+<img width="797" alt="SCREENSHOT_pdlua_control_surface_objects_0 1 0_OVERVIEW" src="https://github.com/user-attachments/assets/ca4ba5b4-d5c8-4dff-b854-45ff924d03fe">
 
+## Documentation
+Open the patch 'pdlua_control_surface_objects_0.1.0_OVERVIEW.pd' for an overview of all the available objects.
 
-https://github.com/user-attachments/assets/090322df-e1a8-4fc6-94b7-877231151593
+I used this [Pdlua tutorial](https://agraef.github.io/pd-lua/tutorial/pd-lua-intro.html) as the main reference.
+
+## License
+All the content of this repository is released under the GPLv3 license.
 
