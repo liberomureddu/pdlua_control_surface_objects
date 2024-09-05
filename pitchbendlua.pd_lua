@@ -3,13 +3,13 @@ local slider = pd.Class:new():register("pitchbendlua")
 function slider:initialize(sel, atoms)
    self.inlets = 1
    self.outlets = 1
-   self.value = 0.5
+   self.value = 0
    self:set_size(200, 30)
    return true
 end
 
 function slider:in_1_float(x)
-   self.value = math.max(0, math.min(1, x))
+   self.value = math.max(-1, math.min(1, x))
    self:repaint()
 end
 
@@ -23,13 +23,13 @@ end
 
 function slider:mouse_drag(x, y)
    local width, height = self:get_size()
-   self.value = math.max(0, math.min(1, x / width))
+   self.value = math.max(-1, math.min(1, (x / width) * 2 - 1))
    self:in_1_bang()
    self:repaint()
 end
 
 function slider:mouse_up(x, y)
-   self.value = 0.5
+   self.value = 0
    self:in_1_bang()
    self:repaint()
 end
@@ -48,7 +48,7 @@ function slider:paint(g)
    -- slider handle
    local handle_width = width * 0.06
    local handle_height = height * 0.9
-   local handle_x = self.value * (width - handle_width) + 1
+   local handle_x = (self.value + 1) / 2 * (width - handle_width) + 1
    local handle_y = (height - handle_height) / 2 + 1
 
    g:set_color(1)
